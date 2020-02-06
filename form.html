@@ -1,0 +1,58 @@
+<html>
+   <head>
+    <title> Registration FORM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="style2.css">
+   </head>
+    
+      <body>
+        <div class="align">
+           <h1>  Registration Form   </h1>
+           <marquee direction="left"> <font color = "RED" > *Fill out the form carefully </font> </marquee>
+           <hr>
+        </div>
+         <form class="register" id="usrform"> 
+                  
+                  <label for="name"><b>NAME:</b></label>
+                          <input type= "text" name="name" size="40">
+                           <br><br>
+
+                  <label for="DOB"><b>DOB:</b></label>
+                           <input type="date" name="DOB" value="DOB">
+                           <br><br>
+                            <label for="mobile"><b>MOBILE:</b></label>
+                            <input type="tel" name="mobile" size="40">
+                             <br><br>
+                  <label for= "male"><b> GENDER :</b></label>
+                           <input type="radio" name="gender" value="male" CHECKED>MALE
+                           <input type="radio" name="gender" value="male" >FEMALE
+                           <input type="radio" name="gender" value="male" >OTHERS
+                           <br> <br>
+                  <label for="BE"><b> QUALIFICATION :</b></label>        
+                             <input type="checkbox" name="qual" value="BE">BE 
+                             <input type="checkbox" name="qual" value="BE">ME 
+                             <input type="checkbox" name="qual" value="BE">OTHERS
+                             <br><br>
+                  <label for="year"><b> YEAR : </b></label>         
+                              <select name= "year" >
+                              <option value="f">I </option>   
+                              <option value="s">II </option>   
+                              <option value="t">III </option>    
+                              <option value="i">IV</option></select> 
+                              <br><br>                 
+                         
+                  <label for="email"><b>EMAIL :</b></label>
+                               <input type="email" name="mail" >
+                               <br><br>
+    
+                  <label for="feedback"><b>Feedback :</b></label>     
+                               <textarea rows="4" cols="40" name="comment" form="usrform" > </textarea> 
+                               <br>   <br>                                                 
+                               <div class="submit">
+                               <input type= "submit" value="SUBMIT" >
+                               <input type= "reset" value="CANCEL" >            
+                                </div>
+
+        </form>
+      </body>
+</html>
