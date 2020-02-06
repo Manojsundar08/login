@@ -5,32 +5,8 @@
             LOGIN
     </title> 
         <link rel="stylesheet" href="style1.css">
-          <script type="text/javascript">
-            function sample()
-               {
-                var x= /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})|([0-9]{10})+$/;
-                if( document.login.log.value == "")
-                {
-                
-                  document.getElementById("invalid").innerHTML= "Enter the valid email id or phone";
-                } 
-                else if(!x.test(document.login.log.value))
-                {
-                document.getElementById("invalid").innerHTML="Entered email id or phone is not valid";
-                }
-                else {
-                document.getElementById("invalid").innerHTML=" ";
-                }
-                if(document.login.pass.value == "mango" && x.test(document.login.log.value))
-                  {
-                   window.location.href = "form.html";
-							     document.getElementById("error").innerHTML= " ";
-                  }
-                else
-                  {
-                   document.getElementById("error").innerHTML= "Wrong:password(mango)";
-                  }
-                 } 
+          <script type="text/javascript" src="login.js">
+           
           </script>
 	  </head>
     <body>
@@ -47,7 +23,7 @@
                   <p id="error"></p><br><br><br>
                   <div class=box style="margin-left: 6%;">
                   <input type="Button" onclick= "sample()" form="login" value="Log In"> 
-                  <input type="reset" onclick="sample()" value="Cancel">
+                  <input type="reset" onclick="location.reload()" value="Cancel">
                   <br>                     
                   </div>        
             </form>

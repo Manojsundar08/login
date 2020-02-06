@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="stylesheet" href="style2.css">
    </head>
+   <script type = "text/javascript" src=form.js> </script>    
     
       <body>
         <div class="align">
@@ -21,7 +22,7 @@
                            <input type="date" name="DOB" value="DOB">
                            <br><br>
                             <label for="mobile"><b>MOBILE:</b></label>
-                            <input type="tel" name="mobile" size="40">
+                            <input type="tel" name="mobile" size="40" >
                              <br><br>
                   <label for= "male"><b> GENDER :</b></label>
                            <input type="radio" name="gender" value="male" CHECKED>MALE
@@ -42,14 +43,14 @@
                               <br><br>                 
                          
                   <label for="email"><b>EMAIL :</b></label>
-                               <input type="email" name="mail" >
+                               <input type="email" name="mail">
                                <br><br>
     
                   <label for="feedback"><b>Feedback :</b></label>     
                                <textarea rows="4" cols="40" name="comment" form="usrform" > </textarea> 
                                <br>   <br>                                                 
                                <div class="submit">
-                               <input type= "submit" value="SUBMIT" >
+                               <input type= "submit" onclick="confirmation()" value="SUBMIT" >
                                <input type= "reset" value="CANCEL" >            
                                 </div>
 
